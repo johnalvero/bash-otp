@@ -1,7 +1,7 @@
 # bash-otp
 One-Time Password generator for CLI using bash, oathtool.
 
-Automatically copys the token into your computer's copy buffer (MacOS only atm)
+Automatically copies the token into your computer's copy buffer (MacOS only atm)
 
 This is basically "Authy for the CLI"
 
@@ -27,19 +27,19 @@ First ensure that there is a directory "tokenfiles" in the main dir where the sc
   $ echo "1234567890abcdef" > tokenfiles/tokenname
   ```
   
-  1. Encrypt the file with the included shell script:
+  2. Encrypt the file with the included shell script:
   ```bash
   $ ./otp-lockfile.sh tokenfiles/tokenname
   Password: (enter a good password)
   ```
   
-  1. Confirm it worked:
+  3. Confirm it worked:
   ```bash
   $ ls tokenfiles/
   tokenname.enc
   ```
 
-1. Run otp.sh; will produce roughly the following output:
+3. Run otp.sh; will produce roughly the following output:
   ```
 $ ./otp.sh tokenname
 Password:
