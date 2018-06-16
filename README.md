@@ -27,19 +27,19 @@ First ensure that there is a directory "tokenfiles" in the main dir where the sc
   $ echo "1234567890abcdef" > tokenfiles/tokenname
   ```
   
-  2. Encrypt the file with the included shell script:
+  - Encrypt the file with the included shell script:
   ```bash
   $ ./otp-lockfile.sh tokenfiles/tokenname
   Password: (enter a good password)
   ```
   
-  3. Confirm it worked:
+  - Confirm it worked:
   ```bash
   $ ls tokenfiles/
   tokenname.enc
   ```
 
-3. Run otp.sh; will produce roughly the following output:
+- Run otp.sh; will produce roughly the following output:
   ```
 $ ./otp.sh tokenname
 Password:
