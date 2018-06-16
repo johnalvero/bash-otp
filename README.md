@@ -21,8 +21,8 @@ Set of bash shell scripts to generate OTP *value* from token using TOTP.
 
 First ensure that there is a directory "tokenfiles" in the main dir where the script resides.
 
-1. Create token file and encrypt it. Resulting file, "tokenfiles/tokenname.enc", is an encrypted file containing the token
-  1. Put your token in a plaintext file in the tokenfiles/ directory:
+- Create token file and encrypt it. Resulting file, "tokenfiles/tokenname.enc", is an encrypted file containing the token
+  - Put your token in a plaintext file in the tokenfiles/ directory:
   ```bash
   $ echo "1234567890abcdef" > tokenfiles/tokenname
   ```
